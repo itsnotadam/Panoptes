@@ -16,6 +16,7 @@ system.tmp + deploy.bat
 ```
 
 **How it works:**
+- Replace ```"TOKEN"``` & ```"ID``` with your actual Telegram Bot Token and ID
 - Compile `main.pyw` to `main.exe` using Nuitkita/Pyinstaller
 - Rename the file to any name and extension: `ren main.exe name.extension` (*Ex: game.data, update.jar, log.cache)*
 - Update the ```.bat``` file on ```line 16``` with your new file name
@@ -34,6 +35,7 @@ custom_app.exe (Packed / Obfuscated)
 
 **How it works:**
 - Modify ```main.pyw``` to create a unique, undetectable executable
+- Replace ```"TOKEN"``` & ```"ID``` with your actual Telegram Bot Token and ID
 - Use packing, obfuscation, file pumping, code signing and other evasion techniques to bypass AV 
 - Since your compiled executable bypasses antivirus, you can disguise it as any legitimate program
 - Then deploy your payload through any method - it appears as a clean, trusted file
