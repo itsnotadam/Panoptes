@@ -17,7 +17,8 @@ system.tmp + deploy.bat
 
 **How it works:**
 - Compile `main.pyw` to `main.exe` using Nuitkita/Pyinstaller
-- Rename the file to ```system.tmp``` using the command```ren main.exe system.tmp```
+- Rename the file to any name and extension: `ren main.exe name.extension` (*Ex: game.data, update.jar, log.cache)*
+- Update the ```.bat``` file on ```line 16``` with your new file name
 - Add both files to the same folder
 - Run `deploy.bat` that runs as Administrator
 - Batch file automatically adds `main.exe` to Windows Defender exclusions
