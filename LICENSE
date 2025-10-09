@@ -4,11 +4,13 @@ ACADEMIC RESEARCH LICENSE
 This is research software. Don't do illegal things with it. If you need a 10-page document to tell you not to break the law, you probably shouldn't be using this software.
 
 ## SECTION 2: EDUCATIONAL INFORMATION
-**Permitted Uses:**
-- Learning how botnets work (so you can defend against them)
+
+Permitted Uses:
+- Learning how malwares work (so you can defend against them)
 - Academic research (papers that nobody will read)
 - Authorized testing (with more paperwork than actual testing)
-**Prohibited Uses:**
+
+Prohibited Uses:
 - Everything that's already illegal in your jurisdiction
 - Annoying your ISP with excessive traffic
 - Testing on systems that aren't yours (unless you enjoy legal letters)
