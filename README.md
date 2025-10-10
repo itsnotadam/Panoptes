@@ -125,6 +125,8 @@ custom_app.exe (Packed / Obfuscated)
 ### 💰 Financial Tools
 - **Crypto Address Swapping** - Automatic clipboard hijacking for multiple cryptocurrencies
 - **Custom Address Management** - Set replacement addresses for BTC, ETH, SOL, and more
+  
+<br>
 
 ## 📋 Command Reference
 
@@ -176,6 +178,8 @@ custom_app.exe (Packed / Obfuscated)
 /keylogger off - Stop keylogger
 ```
 
+<br>
+
 ## 🔧 Technical Details
 
 ### Persistence Mechanisms
@@ -193,12 +197,16 @@ custom_app.exe (Packed / Obfuscated)
 - File upload/download capabilities
 - Real-time command executio
   
+<br>
+
 ## 📊 Performance
 
 - **Real-time streaming**: 3-second intervals
 - **Keylogger updates**: 30-second reports
 - **File operations**: 50MB maximum upload
 - **Process monitoring**: 25-process display limit
+  
+<br>
 
 ## 🔒 Security Considerations
 
@@ -206,10 +214,14 @@ custom_app.exe (Packed / Obfuscated)
 - Uses system-standard communication
 - Implements error handling for stability
 - Includes cleanup mechanisms
+  
+<br>
 
 ## ⚖️ Legal Disclaimer
 
 This tool is designed for authorized security testing, educational purposes, and research. Users are solely responsible for complying with all applicable laws and obtaining proper authorization before deployment. The developers assume no liability for misuse.
+  
+<br>
 
 ## 🔬 Educational Value
 
