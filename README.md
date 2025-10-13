@@ -4,9 +4,11 @@ A comprehensive remote access toolkit with Telegram-based C&C (Command and Contr
 
 ## 🔍 Overview
 
-Professor RAT is a feature-rich remote access Trojan that provides complete surveillance and control over compromised systems. It offers real-time monitoring (camera, microphone, screen), data extraction (passwords, files, browsing history), system control (process management, remote commands), and financial tools (crypto address swapping). All commands are managed through a stealthy Telegram interface. 
+Professor RAT is a powerful spying tool that gives you full control over an infected computer. You can watch the user in real-time through their webcam and microphone, see their screen, and steal their passwords, files, and browsing history. It also lets you run commands on the system and can even hijack cryptocurrency payments. All control is managed through your own Telegram Bot.
 
-The toolkit supports two deployment approaches: **Quick Deployment** using batch scripts that require admin rights for full system access and automatic AV exclusion, or **Advanced Custom Deployment** where users compile customized, packed executables that bypass AV naturally and can be disguised as legitimate programs for stealthy distribution.
+The **Quick Deployment** involves physically installing the Trojan by running the `.bat` file on a vulnerable computer via USB *(Ex: Mall or Library)*. However, this method requires **Administrator rights** for the `.bat` file to add the Trojan to the **Windows Defender exclusion path**, as the toolkit itself has no built-in evasion. Alternatively, you can use social engineering to trick a specific user into running the batch file themselves. 
+
+The **Advanced Deployment** method is for those who have their own techniques to bypass antivirus software. You compile a custom executable, using your own packing or obfuscation methods, which creates a legitimate looking file that is much easier to trick users into running as it doesn't rely on visible batch files or require admin rights upfront.
 
 ## 🚀 Deployment Methods
 
