@@ -50,7 +50,7 @@ This will create a `.exe` file without console window.
 
 **Step 3: Rename File for Stealth**
 
-Rename the compiled file:
+Rename the compiled file (Command Prompt):
 
 ```
 ren system.exe custom_name.tmp
