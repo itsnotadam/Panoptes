@@ -6,15 +6,15 @@ A comprehensive remote access toolkit with Telegram-based C&C (Command and Contr
 
 Professor RAT is a powerful spying tool that gives you full control over an infected computer. You can watch the user in real-time through their webcam and microphone, see their screen, and steal their passwords, files, and browsing history. It also lets you run commands on the system and can even hijack cryptocurrency payments. All control is managed through your own Telegram Bot.
 
-The **Quick Deployment** involves physically installing the Trojan by running the `.bat` file on a vulnerable computer via a normal USB or a Rubber Ducky *(Ex: Mall or Library)*. However, this method requires **Administrator rights** for the `.bat` file to add the Trojan to the **Windows Defender exclusion path**, as the toolkit itself has no built-in evasion. Alternatively, you can use social engineering to trick a specific user into running the batch file themselves. 
+The **Quick Deployment** method requires the computer to have **Administrator access**, as the toolkit itself has no built-in evasion techniques. It relies entirely on the `.bat` file being run with elevated privileges to automatically add persistence and add the main payload to the Windows Defender exclusion path. You can pull this off by either using **social engineering** to trick a user into running the `.bat` file with Admin rights, or by manually installing it via a normal **USB** or a **Rubber Ducky** in places with vulnerable computers, such as tech stores in malls or libraries and schools, where an admin rights user account is most of the time open.
 
-The **Advanced Deployment** method is for those who have their own techniques to bypass antivirus software. You compile a custom executable, using your own packing or obfuscation methods, which creates a legitimate looking file that is much easier to trick users into running as it doesn't rely on visible batch files or require admin rights upfront.
+The **Advanced Deployment** method is for those with their own AV evasion techniques. You compile a **custom executable** that bypasses antivirus software. This method can be used by making your software seem legitimate, making it much easier to trick a user into downloading and running it, or you can also manually install this on computers via **USB** or **Rubber Ducky** since it **doesn't require admin rights** to evade antivirus. However, since there is no ``.bat`` file, you need to add your own **persistence mechanism** into the **main Python file** before compiling the final payload.
 
 ## 🚀 Deployment Methods
 
 ### Method 1: Quick Deployment (Admin Required)
 ```
-system.tmp + deploy.bat
+custom_name.tmp + deploy.bat
 ```
 <br>
 
