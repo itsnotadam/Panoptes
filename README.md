@@ -1,10 +1,10 @@
-# 🕵️‍♂️ Professor RAT - Remote Access Toolkit
+# 🕵️‍♂️ Panoptes - Remote Access Toolkit
 
 A comprehensive remote access toolkit with Telegram-based C&C (Command and Control), designed for monitoring and data exfiltration.
 
 ## 🔍 Overview
 
-Professor RAT is a powerful spying tool that gives you full control over an infected computer. You can watch the user in real-time through their webcam and microphone, see their screen, and steal their passwords, files, and browsing history. It also lets you run commands on the system and can even hijack cryptocurrency payments. All control is managed through your own Telegram Bot.
+Panoptes is a powerful spying tool that gives you full control over an infected computer. You can watch the user in real-time through their webcam and microphone, see their screen, and steal their passwords, files, and browsing history. It also lets you run commands on the system and can even hijack cryptocurrency payments. All control is managed through your own Telegram Bot.
 
 The **Quick Deployment** method requires the computer to have **Administrator access**, as the toolkit itself has no built-in evasion techniques. It relies entirely on the `.bat` file being run with elevated privileges to automatically add persistence and add the main payload to the Windows Defender exclusion path. You can pull this off by either using **social engineering** to trick a user into running the `.bat` file with Admin rights, or by manually installing it via a normal **USB** or a **Rubber Ducky** in places with vulnerable computers, such as tech stores in malls or libraries and schools, where an admin rights user account is most of the time open.
 
